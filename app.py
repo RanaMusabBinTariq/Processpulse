@@ -69,7 +69,10 @@ def css():
 :root{--teal:#0EA57A;--blue:#2777B8;--amber:#F4A62A;--red:#E75858;--ink:#153B4A;--muted:#617888;--line:#DDECEF;}
 html,body,[class*="css"]{font-family:Inter,Segoe UI,Arial,sans-serif;}
 .stApp{background:#F7FBFD;color:var(--ink);}
-.block-container{padding-top:.7rem;max-width:1240px;}
+#MainMenu{visibility:hidden;}footer{visibility:hidden;}
+.block-container{padding-top:2.5rem;padding-bottom:2rem;max-width:1240px;}
+[data-testid="stAppViewContainer"]>[data-testid="stMain"]{overflow:visible;}
+header[data-testid="stHeader"]{background:transparent;}
 section[data-testid="stSidebar"]{background:#fff;border-right:1px solid #DDECEF;}
 .logo-box{text-align:center;padding:7px 3px 10px;}
 .brand-card{background:#F7FEFB;border:1px solid #CFEDE5;border-radius:14px;padding:10px;font-size:12px;color:#45616E;margin-bottom:8px;}
