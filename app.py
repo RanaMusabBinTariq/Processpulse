@@ -36,7 +36,7 @@ SCENARIO_LABEL = {
 }
 
 def init_state():
-    defaults = dict(lang="en", page="dashboard", reviewer=AUTHOR, scenario="normal",
+    defaults = dict(lang="en", page="dashboard", reviewer=AUTHOR, scenario="ph_drift",
                     data_mode="sample", audit=[], manual_status={})
     for k,v in defaults.items():
         if k not in st.session_state: st.session_state[k]=v
